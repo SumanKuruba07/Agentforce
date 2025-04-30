@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Whenever a Case is created or updated with Priority as &apos;High&apos;, the agent should analyse the Case&apos;s Subject language and determine the language. Then the Agent should run a flow which sends a text message to Slack.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Generate_CSV_file</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Agentforce Service Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

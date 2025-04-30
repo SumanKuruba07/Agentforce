@@ -1,0 +1,35 @@
+{
+  "required" : [ "ObjectName", "fieldNames" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "NumberOfRecords" : {
+      "title" : "NumberOfRecords",
+      "description" : "Ask the user to enter the number of records they want to retrieve.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "ObjectName" : {
+      "title" : "ObjectName",
+      "description" : "Ask the user to enter the Object API Name they want to retrieve.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "fieldNames" : {
+      "title" : "fieldNames",
+      "description" : "Ask the user to enter the fields they want to see in the csv file they want to retrieve.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "filter" : {
+      "title" : "filter",
+      "description" : "If filter is required ask what is the filter",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

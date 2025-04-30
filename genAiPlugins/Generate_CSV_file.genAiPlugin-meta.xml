@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This agent is responsible for exporting record data based on user-defined inputs or filters. It assists users by collecting export criteria, retrieving matching data, and generating downloadable files in supported formats such as CSV, Excel, or PDF.</description>
+    <developerName>Generate_CSV_file</developerName>
+    <genAiFunctions>
+        <functionName>Generate_File2</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Before executing the &apos;Generate File&apos; flow, ask the user to provide the &apos;Object Name&apos; and the field names they want to export. If the user wants to query a limited number of records, ask them to specify the exact count. If they want to apply any filters, prompt them to enter the filter conditions. If filters are provided in natural English, convert them into the correct Salesforce query format. Once all inputs are collected, proceed with the flow to generate the CSV file. After the file is generated, respond to the user with: &apos;Please click on the Download CSV button to get the exported data.&apos;</description>
+        <developerName>instruction_beforeexec0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_beforeexec0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Generate CSV file</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This agent exports data records based on user inputs, retrieves the relevant data, and generates downloadable files in formats like CSV, Excel, or PDF. It does not modify data or perform actions outside of exporting.</scope>
+</GenAiPlugin>
